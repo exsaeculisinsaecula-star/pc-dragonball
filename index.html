@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>게이밍 고사양 PC 드래곤볼 견적표</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #121a2f;
+      --text: #e8eefc;
+      --muted: #9aabc9;
+      --accent: #5b8cff;
+      --gold: #f0c75e;
+      --green: #3ddc97;
+      --red: #ff6b7a;
+      --border: #24314d;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", "Pretendard", "Noto Sans KR", sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, #1a2750 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 32px 16px 64px;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; }
+    header { margin-bottom: 28px; }
+    h1 {
+      font-size: clamp(1.6rem, 4vw, 2.3rem);
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .sub { color: var(--muted); font-size: 0.98rem; }
+    .meta {
+      display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px;
+    }
+    .chip {
+      background: var(--card); border: 1px solid var(--border);
+      padding: 6px 12px; border-radius: 999px; font-size: 0.85rem; color: var(--muted);
+    }
+    .chip strong { color: var(--text); }
+    .warn {
+      margin: 18px 0; padding: 14px 16px; border-radius: 12px;
+      background: rgba(240, 199, 94, 0.1); border: 1px solid rgba(240, 199, 94, 0.35);
+      color: var(--gold); font-size: 0.95rem;
+    }
+    .grid { display: grid; gap: 18px; }
+    @media (min-width: 800px) { .grid.two { grid-template-columns: 1fr 1fr; } }
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 16px; padding: 22px;
+    }
+    .card h2 { font-size: 1.15rem; margin-bottom: 6px; }
+    .card .total {
+      font-size: 1.8rem; font-weight: 700; color: var(--gold); margin: 10px 0 16px;
+    }
+    .badge {
+      display: inline-block; font-size: 0.75rem; padding: 3px 10px;
+      border-radius: 999px; margin-bottom: 10px;
+    }
+    .badge.a { background: rgba(91,140,255,0.18); color: var(--accent); }
+    .badge.b { background: rgba(61,220,151,0.15); color: var(--green); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    th { color: var(--muted); font-weight: 600; font-size: 0.82rem; }
+    td.price { white-space: nowrap; color: var(--gold); font-weight: 600; }
+    .muted { color: var(--muted); font-size: 0.85rem; }
+    .section-title {
+      margin: 32px 0 14px; font-size: 1.25rem;
+    }
+    .dragonball {
+      display: grid; gap: 12px;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+    .ball {
+      background: linear-gradient(160deg, #1a2440, #121a2f);
+      border: 1px solid var(--border); border-radius: 14px; padding: 16px;
+    }
+    .ball .num {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: var(--gold); color: #201800; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.85rem; margin-bottom: 10px;
+    }
+    .ball .name { font-weight: 600; margin-bottom: 4px; }
+    .ball .product { color: var(--muted); font-size: 0.88rem; min-height: 2.6em; }
+    .ball .price { color: var(--gold); font-weight: 700; margin-top: 8px; }
+    footer {
+      margin-top: 40px; color: var(--muted); font-size: 0.85rem;
+      border-top: 1px solid var(--border); padding-top: 16px;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>게이밍 고사양 PC 드래곤볼 견적표</h1>
+      <p class="sub">다나와 최저가 기준 · 부품별 최저가를 모아 맞추는 고사양 게이밍 PC 견적</p>
+      <div class="meta">
+        <span class="chip">작성일 <strong>2026-10-13</strong></span>
+        <span class="chip">출처 <strong>다나와 가격비교</strong></span>
+        <span class="chip">수집 <strong>Firecrawl</strong></span>
+        <span class="chip">용도 <strong>게이밍 고사양</strong></span>
+      </div>
+    </header>
+
+    <div class="warn">
+      GPU 수급 이슈로 가격이 높은 구간입니다. RTX 5090은 시장가가 과열되어 <strong>RTX 5080</strong>을 추천합니다.
+    </div>
+
+    <div class="grid two">
+      <section class="card">
+        <span class="badge a">조합 A · 풀 최고사양</span>
+        <h2>9800X3D + RTX 5080</h2>
+        <div class="total">약 5,414,577원</div>
+        <table>
+          <thead>
+            <tr><th>부품</th><th>제품</th><th>최저가</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>CPU</td><td>AMD 라이젠7 9800X3D 멀티팩</td><td class="price">633,140원</td></tr>
+            <tr><td>메인보드</td><td>GIGABYTE X870E AORUS ELITE X3D ICE</td><td class="price">416,590원</td></tr>
+            <tr><td>메모리</td><td>G.SKILL DDR5-6000 CL36 32GB</td><td class="price">899,000원</td></tr>
+            <tr><td>GPU</td><td>ZOTAC RTX 5080 SOLID CORE OC</td><td class="price">2,339,100원</td></tr>
+            <tr><td>SSD</td><td>삼성전자 990 PRO 2TB 해외</td><td class="price">571,810원</td></tr>
+            <tr><td>파워</td><td>시소닉 FOCUS V4 GX-1000 GOLD</td><td class="price">253,503원</td></tr>
+            <tr><td>쿨러</td><td>ARCTIC Liquid Freezer III PRO 360</td><td class="price">148,934원</td></tr>
+            <tr><td>케이스</td><td>darkFlash DLX ULTRA MESH ARGB</td><td class="price">153,000원</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="card">
+        <span class="badge b">조합 B · 가성비 고사양</span>
+        <h2>7800X3D + RTX 5080</h2>
+        <div class="total">약 4,734,344원</div>
+        <table>
+          <thead>
+            <tr><th>부품</th><th>제품</th><th>최저가</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>CPU</td><td>AMD 라이젠7 7800X3D</td><td class="price">335,060원</td></tr>
+            <tr><td>메인보드</td><td>GIGABYTE X870 AORUS ELITE WIFI7 ICE</td><td class="price">352,740원</td></tr>
+            <tr><td>메모리</td><td>Apacer DDR5-6000 CL38 NOX RGB 32GB</td><td class="price">690,490원</td></tr>
+            <tr><td>GPU</td><td>ZOTAC RTX 5080 SOLID CORE OC</td><td class="price">2,339,100원</td></tr>
+            <tr><td>SSD</td><td>삼성전자 990 PRO 2TB 해외</td><td class="price">571,810원</td></tr>
+            <tr><td>파워</td><td>잘만 TeraMax II SE 1000W Gold</td><td class="price">143,210원</td></tr>
+            <tr><td>쿨러</td><td>ARCTIC Liquid Freezer III PRO 360</td><td class="price">148,934원</td></tr>
+            <tr><td>케이스</td><td>darkFlash DLX ULTRA MESH ARGB</td><td class="price">153,000원</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+
+    <h2 class="section-title">드래곤볼 최저가 TOP</h2>
+    <div class="dragonball">
+      <div class="ball">
+        <div class="num">1</div>
+        <div class="name">CPU</div>
+        <div class="product">9800X3D 벌크 병행</div>
+        <div class="price">599,860원</div>
+      </div>
+      <div class="ball">
+        <div class="num">2</div>
+        <div class="name">메인보드</div>
+        <div class="product">X870E AORUS ELITE X3D ICE</div>
+        <div class="price">416,590원</div>
+      </div>
+      <div class="ball">
+        <div class="num">3</div>
+        <div class="name">메모리 32GB</div>
+        <div class="product">Apacer NOX RGB DDR5-6000</div>
+        <div class="price">690,490원</div>
+      </div>
+      <div class="ball">
+        <div class="num">4</div>
+        <div class="name">GPU</div>
+        <div class="product">ZOTAC RTX 5080 SOLID CORE OC</div>
+        <div class="price">2,339,100원</div>
+      </div>
+      <div class="ball">
+        <div class="num">5</div>
+        <div class="name">SSD 2TB</div>
+        <div class="product">삼성 990 PRO 해외구매</div>
+        <div class="price">571,810원</div>
+      </div>
+      <div class="ball">
+        <div class="num">6</div>
+        <div class="name">파워 1000W</div>
+        <div class="product">잘만 TeraMax II SE Gold</div>
+        <div class="price">143,210원</div>
+      </div>
+      <div class="ball">
+        <div class="num">7</div>
+        <div class="name">쿨러 360</div>
+        <div class="product">ARCTIC LF III PRO 360</div>
+        <div class="price">148,934원</div>
+      </div>
+      <div class="ball">
+        <div class="num">8</div>
+        <div class="name">케이스</div>
+        <div class="product">darkFlash DLX ULTRA MESH</div>
+        <div class="price">153,000원</div>
+      </div>
+    </div>
+
+    <h2 class="section-title">시장 상황 (2026-10)</h2>
+    <section class="card">
+      <ul class="muted" style="padding-left: 18px; display: grid; gap: 8px;">
+        <li><strong style="color:var(--text)">GPU</strong> — 수급 부족으로 가격 상승. RTX 5090은 구매 비추, RTX 5080이 실용적 상한</li>
+        <li><strong style="color:var(--text)">SSD</strong> — 2TB가 57~90만원대. 해외구매가 국내보다 유리</li>
+        <li><strong style="color:var(--text)">RAM</strong> — DDR5 32GB 키트 69~90만원. 게이밍에서 CL 차이 체감 제한적</li>
+        <li><strong style="color:var(--text)">CPU</strong> — 9800X3D가 게이밍 왕좌. 예산이 빠듯하면 7800X3D</li>
+      </ul>
+    </section>
+
+    <footer>
+      출처: 다나와 가격비교 (Firecrawl 스크래핑) · 가격은 시점에 따라 변동될 수 있습니다 ·
+      <a href="README.md">상세 견적표 (Markdown)</a>
+    </footer>
+  </div>
+</body>
+</html>
